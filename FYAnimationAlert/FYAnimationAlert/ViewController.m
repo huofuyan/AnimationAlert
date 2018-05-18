@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "FY_IntentViewController.h"
 
 @interface ViewController ()
 
@@ -16,8 +17,35 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    
+    [button setTitle:@"点击我" forState:UIControlStateNormal];
+    
+    [button setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    
+    [button addTarget:self action:@selector(clickButton:) forControlEvents:UIControlEventTouchUpInside];
+    
+    button.frame = CGRectMake(100, 200, 200, 50);
+    
+    [self.view addSubview:button];
+
 }
+
+- (void)clickButton:(UIButton *)button {
+    
+    FY_IntentViewController *vc = [[FY_IntentViewController alloc] init];
+    
+//    vc.modalPresentationStyle = UIModalPresentationOverFullScreen;
+    
+    [self presentViewController:vc animated:YES completion:nil];
+    
+    
+}
+
+
 
 
 - (void)didReceiveMemoryWarning {

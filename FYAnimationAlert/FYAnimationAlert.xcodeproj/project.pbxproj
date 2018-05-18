@@ -15,6 +15,9 @@
 		18706CD620A536CB00369FFF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18706CD520A536CB00369FFF /* main.m */; };
 		18706CE020A536CB00369FFF /* FYAnimationAlertTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18706CDF20A536CB00369FFF /* FYAnimationAlertTests.m */; };
 		18706CEB20A536CB00369FFF /* FYAnimationAlertUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18706CEA20A536CB00369FFF /* FYAnimationAlertUITests.m */; };
+		18A6D74620AD179E00D95195 /* FY_BaseAnimationTranstion.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A6D74520AD179E00D95195 /* FY_BaseAnimationTranstion.m */; };
+		18C4E25120A922D50018B2A3 /* FY_IntentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C4E25020A922D50018B2A3 /* FY_IntentViewController.m */; };
+		18C4E25420A93CB90018B2A3 /* FY_ScaleTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C4E25320A93CB90018B2A3 /* FY_ScaleTransition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		18706CE620A536CB00369FFF /* FYAnimationAlertUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FYAnimationAlertUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18706CEA20A536CB00369FFF /* FYAnimationAlertUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FYAnimationAlertUITests.m; sourceTree = "<group>"; };
 		18706CEC20A536CB00369FFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18A6D74420AD179E00D95195 /* FY_BaseAnimationTranstion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FY_BaseAnimationTranstion.h; sourceTree = "<group>"; };
+		18A6D74520AD179E00D95195 /* FY_BaseAnimationTranstion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FY_BaseAnimationTranstion.m; sourceTree = "<group>"; };
+		18C4E24F20A922D50018B2A3 /* FY_IntentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FY_IntentViewController.h; sourceTree = "<group>"; };
+		18C4E25020A922D50018B2A3 /* FY_IntentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FY_IntentViewController.m; sourceTree = "<group>"; };
+		18C4E25220A93CB90018B2A3 /* FY_ScaleTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FY_ScaleTransition.h; sourceTree = "<group>"; };
+		18C4E25320A93CB90018B2A3 /* FY_ScaleTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FY_ScaleTransition.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +110,8 @@
 		18706CC520A536C800369FFF /* FYAnimationAlert */ = {
 			isa = PBXGroup;
 			children = (
+				18A6D74320AD178500D95195 /* Animation */,
+				18C4E24E20A922520018B2A3 /* FYAlert */,
 				18706CC620A536C800369FFF /* AppDelegate.h */,
 				18706CC720A536C800369FFF /* AppDelegate.m */,
 				18706CC920A536C900369FFF /* ViewController.h */,
@@ -130,6 +141,26 @@
 				18706CEC20A536CB00369FFF /* Info.plist */,
 			);
 			path = FYAnimationAlertUITests;
+			sourceTree = "<group>";
+		};
+		18A6D74320AD178500D95195 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				18A6D74420AD179E00D95195 /* FY_BaseAnimationTranstion.h */,
+				18A6D74520AD179E00D95195 /* FY_BaseAnimationTranstion.m */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		18C4E24E20A922520018B2A3 /* FYAlert */ = {
+			isa = PBXGroup;
+			children = (
+				18C4E24F20A922D50018B2A3 /* FY_IntentViewController.h */,
+				18C4E25020A922D50018B2A3 /* FY_IntentViewController.m */,
+				18C4E25220A93CB90018B2A3 /* FY_ScaleTransition.h */,
+				18C4E25320A93CB90018B2A3 /* FY_ScaleTransition.m */,
+			);
+			path = FYAlert;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +225,7 @@
 		18706CBB20A536C800369FFF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = FY_;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = apple;
 				TargetAttributes = {
@@ -265,6 +297,9 @@
 				18706CCB20A536C900369FFF /* ViewController.m in Sources */,
 				18706CD620A536CB00369FFF /* main.m in Sources */,
 				18706CC820A536C800369FFF /* AppDelegate.m in Sources */,
+				18A6D74620AD179E00D95195 /* FY_BaseAnimationTranstion.m in Sources */,
+				18C4E25420A93CB90018B2A3 /* FY_ScaleTransition.m in Sources */,
+				18C4E25120A922D50018B2A3 /* FY_IntentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
